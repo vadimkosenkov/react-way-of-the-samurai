@@ -1,0 +1,15 @@
+.content {
+    grid-area: c;
+}
+
+.titleImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 64%;
+    margin-bottom: 10px;
+}
+
+.br {
+    border-radius: 3px;
+}

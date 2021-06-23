@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.body {
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    color: #111238;
+    color: #16272d;
 }
 
 .app-wrapper {
@@ -18,32 +19,4 @@
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
     grid-gap: 10px;
-}
-
-.header {
-    grid-area: h;
-    background: linear-gradient(180deg, #2376f3, #3e9eee);
-}
-
-.header_logo {
-    width: 60px;
-    height: 60px;
-}
-
-.nav {
-    grid-area: n;
-    background: linear-gradient(180deg, #2376f3, #3e9eee);
-}
-
-.content {
-    grid-area: c;
-}
-
-.profile_titleImg {
-    width: 100%;
-    height: 200px;
-}
-
-.br {
-    border-radius: 3px;
 }

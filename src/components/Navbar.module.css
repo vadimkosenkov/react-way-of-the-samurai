@@ -1,0 +1,22 @@
+.nav {
+    grid-area: n;
+    background: linear-gradient(135deg, #40686f, #c9e0db);
+    padding: 10px 15px;
+    line-height: 26px;
+}
+
+.item {
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #16272d75;
+}
+
+.br {
+    border-radius: 3px;
+}
+
+.item.active {
+    font-weight: 700;
+    color: #16272d;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
