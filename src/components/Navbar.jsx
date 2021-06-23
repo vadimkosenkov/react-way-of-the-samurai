@@ -3,9 +3,9 @@ import s from './Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <nav className={s.nav + ' ' + s.br}>
+    <nav className={`${s.nav} ${s.br}`}>
       <div>
-        <a href='#' className={s.item + ' ' + s.active}>
+        <a href='#' className={`${s.item} ${s.active}`}>
           Profile
         </a>
       </div>
