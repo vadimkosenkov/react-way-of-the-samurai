@@ -11,12 +11,12 @@ const MyPosts = () => {
         <button>Add post</button>
       </div>
       <div className={s.posts}>
-        <Post />
-        <Post />
-        <div className={s.item}>
-          <img src='https://images.ua.prom.st/1440764527_saharnaya-kartinka-lyubov.jpg' alt='img: avatar' />
-          post2
-        </div>
+        <Post
+          message='Hello, how are you?'
+          src='https://www.meme-arsenal.com/memes/50569ac974c29121ff9075e45a334942.jpg'
+          like='10'
+        />
+        <Post message='I am fine!' src='https://images.ua.prom.st/1440764527_saharnaya-kartinka-lyubov.jpg' like='20' />
       </div>
     </div>
   );
