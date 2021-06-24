@@ -6,7 +6,7 @@ console.log(s);
 
 const Profile = () => {
   return (
-    <div className={`${s.content}`}>
+    <div className={`app-wrapper_content`}>
       <div>
         <img
           className={`${s.titleImg} br`}

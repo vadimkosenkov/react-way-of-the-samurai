@@ -21,6 +21,10 @@ body {
     grid-gap: 10px;
 }
 
+.app-wrapper_content {
+    grid-area: c;
+}
+
 .br {
     border-radius: 3px;
 }

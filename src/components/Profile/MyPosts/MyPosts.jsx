@@ -14,9 +14,13 @@ const MyPosts = () => {
         <Post
           message='Hello, how are you?'
           src='https://www.meme-arsenal.com/memes/50569ac974c29121ff9075e45a334942.jpg'
-          like='10'
+          likesCount='10'
         />
-        <Post message='I am fine!' src='https://images.ua.prom.st/1440764527_saharnaya-kartinka-lyubov.jpg' like='20' />
+        <Post
+          message='I am fine!'
+          src='https://images.ua.prom.st/1440764527_saharnaya-kartinka-lyubov.jpg'
+          likesCount='20'
+        />
       </div>
     </div>
   );
