@@ -5,7 +5,7 @@
     line-height: 26px;
 }
 
-.item {
+.item a {
     color: whitesmoke;
     text-decoration: none;
     text-shadow: 1px 1px 1px #16272d75;
@@ -13,7 +13,11 @@
     transition: 0.2s;
 }
 
-.item:hover {
+.item a:hover {
+    background-color: #ffffff12;
+}
+
+.item a.activeLink {
     font-weight: 700;
     color: #16272d;
     text-shadow: 1px 1px 1px rgba(207, 79, 79, 0.2);

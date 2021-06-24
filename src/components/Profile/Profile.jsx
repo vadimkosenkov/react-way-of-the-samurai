@@ -2,7 +2,6 @@ import React from 'react';
 import s from './Profile.module.css';
 import './../../App.css';
 import MyPosts from './MyPosts/MyPosts';
-console.log(s);
 
 const Profile = () => {
   return (
