@@ -9,10 +9,12 @@
     color: whitesmoke;
     text-decoration: none;
     text-shadow: 1px 1px 1px #16272d75;
+    display: inline-block;
+    transition: 0.2s;
 }
 
-.item.active {
+.item:hover {
     font-weight: 700;
     color: #16272d;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+    text-shadow: 1px 1px 1px rgba(207, 79, 79, 0.2);
 }
