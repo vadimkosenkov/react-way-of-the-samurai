@@ -16,8 +16,9 @@ const App = () => {
         <Header />
         <Navbar />
         <div className='app-wrapper_content'>
-          <Route exact path='/profile' component={Profile} />
-          <Route exact path='/dialogs' component={Dialogs} />
+          <Route path='/profile' component={Profile} />
+          <Route path='/dialogs' component={Dialogs} />
+          {/*exact */}
           <Route exact path='/news' component={News} />
           <Route exact path='/music' component={Music} />
           <Route exact path='/settings' component={Settings} />

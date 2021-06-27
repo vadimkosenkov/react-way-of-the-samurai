@@ -2,34 +2,37 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import { NavLink } from 'react-router-dom';
 import './../../App.css';
+import TitleImg from './../TitleImg/TitleImg';
+
+const DialogItem = (props) => {
+  let path = '/dialogs/' + props.id;
+  return (
+    <div className={s.item}>
+      <NavLink to={path} activeClassName={s.activeLink}>
+        {props.name}
+      </NavLink>
+    </div>
+  );
+};
+
+const Message = (props) => {
+  return <div className={s.item}>{props.message}</div>;
+};
 
 const Dialogs = () => {
   return (
     <div className={'app-wrapper_content'}>
+      <TitleImg />
       <div className={s.container}>
         <div className={s.dialog_items}>
-          <div className={s.item}>
-            <NavLink to='/dialogs/mike' activeClassName={s.activeLink}>
-              Майк Дельфино
-            </NavLink>
-          </div>
-          <div className={s.item}>
-            <NavLink to='/dialogs/carlos' activeClassName={s.activeLink}>
-              Карлос Солис
-            </NavLink>
-          </div>
-          <div className={s.item}>
-            <NavLink to='/dialogs/tom' activeClassName={s.activeLink}>
-              Том Скаво
-            </NavLink>
-          </div>
+          <DialogItem name='Майк Дельфино' id='mike_delfino' />
+          <DialogItem name='Карлос Солис' id='carlos_solis' />
+          <DialogItem name='Том Скаво' id='tom_skavo' />
         </div>
         <div className={s.message_items}>
-          <div className={s.item}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, id nostrum!</div>
-          <div className={s.item}>Dolor incidunt expedita est eveniet soluta.</div>
-          <div className={s.item}>
-            Ab nostrum deserunt, provident obcaecati beatae laborum cum minima unde officia consectetur!
-          </div>
+          <Message message='Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, id nostrum!' />
+          <Message message='Dolor incidunt expedita est eveniet soluta.' />
+          <Message message='Ab nostrum deserunt, provident obcaecati beatae laborum cum minima unde officia consectetur!' />
         </div>
       </div>
     </div>
