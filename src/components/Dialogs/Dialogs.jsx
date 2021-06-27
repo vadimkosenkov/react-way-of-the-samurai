@@ -9,17 +9,17 @@ const Dialogs = () => {
       <div className={s.container}>
         <div className={s.dialog_items}>
           <div className={s.item}>
-            <NavLink to='/dialogs/Mike' activeClassName={s.activeLink}>
+            <NavLink to='/dialogs/mike' activeClassName={s.activeLink}>
               Майк Дельфино
             </NavLink>
           </div>
           <div className={s.item}>
-            <NavLink to='/dialogs/Carlos' activeClassName={s.activeLink}>
+            <NavLink to='/dialogs/carlos' activeClassName={s.activeLink}>
               Карлос Солис
             </NavLink>
           </div>
           <div className={s.item}>
-            <NavLink to='/dialogs/Tom' activeClassName={s.activeLink}>
+            <NavLink to='/dialogs/tom' activeClassName={s.activeLink}>
               Том Скаво
             </NavLink>
           </div>
