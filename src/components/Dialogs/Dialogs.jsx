@@ -19,21 +19,28 @@ const Message = (props) => {
   return <div className={s.item}>{props.message}</div>;
 };
 
+let dialogsData = [
+  { id: 1, name: 'Майк Дельфино' },
+  { id: 2, name: 'Карлос Солис' },
+  { id: 3, name: 'Том Скаво' },
+];
+
+let messagesData = [
+  { id: 1, message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, id nostrum!' },
+  { id: 2, message: 'Dolor incidunt expedita est eveniet soluta.' },
+  { id: 3, message: 'Ab nostrum deserunt, provident obcaecati beatae laborum cum minima unde officia consectetur!' },
+];
+
+let dialogElements = dialogsData.map((dialog) => <DialogItem id={dialog.id} name={dialog.name} />);
+let messageElements = messagesData.map((message) => <Message message={message.message} />);
+
 const Dialogs = () => {
   return (
     <div className={'app-wrapper_content'}>
       <TitleImg />
       <div className={s.container}>
-        <div className={s.dialog_items}>
-          <DialogItem name='Майк Дельфино' id='mike_delfino' />
-          <DialogItem name='Карлос Солис' id='carlos_solis' />
-          <DialogItem name='Том Скаво' id='tom_skavo' />
-        </div>
-        <div className={s.message_items}>
-          <Message message='Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, id nostrum!' />
-          <Message message='Dolor incidunt expedita est eveniet soluta.' />
-          <Message message='Ab nostrum deserunt, provident obcaecati beatae laborum cum minima unde officia consectetur!' />
-        </div>
+        <div className={s.dialog_items}>{dialogElements}</div>
+        <div className={s.message_items}>{messageElements}</div>
       </div>
     </div>
   );
