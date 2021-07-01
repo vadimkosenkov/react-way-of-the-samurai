@@ -9,16 +9,22 @@ import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
         <Navbar />
         <div className='app-wrapper_content'>
-          <Route path='/profile' component={Profile} />
-          <Route path='/dialogs' component={Dialogs} />
-          {/*exact */}
+          <Route path='/profile' render={() => <Profile postsData={props.postsData} />} />
+          <Route
+            path='/dialogs'
+            render={() => <Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />}
+          />
+          {/* Атрибуты Route:
+          exact - точное совпадение адреса;
+          component - если не не будет props;
+          render - если будут props*/}
           <Route exact path='/news' component={News} />
           <Route exact path='/music' component={Music} />
           <Route exact path='/settings' component={Settings} />

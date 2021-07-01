@@ -5,12 +5,12 @@ import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 import TitleImg from '../TitleImg/TitleImg';
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className={`app-wrapper_content`}>
       <TitleImg />
       <ProfileInfo />
-      <MyPosts />
+      <MyPosts postsData={props.postsData} />
     </div>
   );
 };

@@ -6,22 +6,9 @@ import TitleImg from './../TitleImg/TitleImg';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
 
-let dialogsData = [
-  { id: 1, name: 'Майк Дельфино' },
-  { id: 2, name: 'Карлос Солис' },
-  { id: 3, name: 'Том Скаво' },
-];
-
-let messagesData = [
-  { id: 4, message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, id nostrum!' },
-  { id: 5, message: 'Dolor incidunt expedita est eveniet soluta.' },
-  { id: 6, message: 'Ab nostrum deserunt, provident obcaecati beatae laborum cum minima unde officia consectetur!' },
-];
-
-let dialogElements = dialogsData.map((elem) => <DialogItem key={elem.id} name={elem.name} />);
-let messageElements = messagesData.map((elem) => <Message key={elem.id} message={elem.message} />);
-
-const Dialogs = () => {
+const Dialogs = (props) => {
+  let dialogElements = props.dialogsData.map((elem) => <DialogItem key={elem.id} id={elem.id} name={elem.name} />);
+  let messageElements = props.messagesData.map((elem) => <Message key={elem.id} id={elem.id} message={elem.message} />);
   return (
     <div className={'app-wrapper_content'}>
       <TitleImg />
