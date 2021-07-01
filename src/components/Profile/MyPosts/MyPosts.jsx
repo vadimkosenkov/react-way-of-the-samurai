@@ -17,7 +17,9 @@ let postsData = [
   },
 ];
 
-let postElements = postsData.map((post) => <Post message={post.message} src={post.src} likesCount={post.likesCount} />);
+let postElements = postsData.map((elem) => (
+  <Post key={elem.id} message={elem.message} src={elem.src} likesCount={elem.likesCount} />
+));
 
 const MyPosts = () => {
   return (
@@ -31,7 +33,5 @@ const MyPosts = () => {
     </div>
   );
 };
-
-// test
 
 export default MyPosts;
