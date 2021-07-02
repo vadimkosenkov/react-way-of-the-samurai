@@ -16,11 +16,8 @@ const App = (props) => {
         <Header />
         <Navbar />
         <div className='app-wrapper_content'>
-          <Route path='/profile' render={() => <Profile postsData={props.postsData} />} />
-          <Route
-            path='/dialogs'
-            render={() => <Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />}
-          />
+          <Route path='/profile' render={() => <Profile state={props.state.profilePage} />} />
+          <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage} />} />
           {/* Атрибуты Route:
           exact - точное совпадение адреса;
           component - если не не будет props;

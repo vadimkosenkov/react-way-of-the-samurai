@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Profile.module.css';
+// import s from './Profile.module.css';
 import './../../App.css';
 import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
@@ -10,7 +10,7 @@ const Profile = (props) => {
     <div className={`app-wrapper_content`}>
       <TitleImg />
       <ProfileInfo />
-      <MyPosts postsData={props.postsData} />
+      <MyPosts postsData={props.state.postsData} />
     </div>
   );
 };

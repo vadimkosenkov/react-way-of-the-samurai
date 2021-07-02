@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Settings.module.css';
+// import s from './Settings.module.css';
 import './../../App.css';
 import TitleImg from './../TitleImg/TitleImg';
 
