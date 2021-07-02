@@ -8,11 +8,14 @@ const MyPosts = (props) => {
   ));
 
   return (
-    <div className={s.container}>
+    <div>
       my posts
-      <div>
-        <textarea></textarea>
-        <button>Add post</button>
+      <div className={s.container}>
+        <textarea className='br' rows='3' cols='40' name='myNewPost' placeholder='Share the news'></textarea>
+        <button className={`${s.button} br`}>
+          <img src='./images/send.png' alt='icon: send' />
+          <div>Add post</div>
+        </button>
       </div>
       <div className={s.posts}>{postElements}</div>
     </div>

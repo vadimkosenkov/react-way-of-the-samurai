@@ -2,9 +2,15 @@
 
 .posts {}
 
-.item {}
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 .item img {
     width: 60px;
+    height: 60px;
     border-radius: 50%;
+    margin-right: 20px;
 }

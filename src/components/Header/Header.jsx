@@ -11,7 +11,7 @@ const Header = () => {
         <div className={s.searchBar}>
           <input type='text' className={s.input} placeholder='Начните поиск' />
           <button className={`${s.button} br`}>
-            <img src='./images/search.svg' alt='icon: search' />
+            <img src='./images/search.png' alt='icon: search' />
             <div>Найти</div>
           </button>
         </div>

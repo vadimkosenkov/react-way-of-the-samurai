@@ -15,10 +15,21 @@ let state = {
         ],
     },
     dialogsPage: {
-        dialogsData: [
-            { id: 1, name: 'Майк Дельфино' },
-            { id: 2, name: 'Карлос Солис' },
-            { id: 3, name: 'Том Скаво' },
+        dialogsData: [{
+                id: 1,
+                name: 'Maldives girl',
+                src: 'https://www.meme-arsenal.com/memes/6b5a608b4cbea75463fd557bde26f20a.jpg',
+            },
+            {
+                id: 2,
+                name: 'Jimmy Neutron',
+                src: 'https://www.meme-arsenal.com/memes/74bfca3625d80ea5fd13f6645a6c4cf0.jpg',
+            },
+            {
+                id: 3,
+                name: 'Hobbiton',
+                src: 'https://www.meme-arsenal.com/memes/0ca4628e6012b07c502d5c0b23c19217.jpg',
+            },
         ],
         messagesData: [
             { id: 1, message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, id nostrum!' },
@@ -29,6 +40,7 @@ let state = {
             },
         ],
     },
+    sidebar: {},
 };
 
 export default state;
