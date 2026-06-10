@@ -23,9 +23,9 @@ const App = (props) => {
           exact - точное совпадение адреса;
           component - если не не будет props;
           render - если будут props*/}
-          <Route exact path='/news' component={News} />
-          <Route exact path='/music' component={Music} />
-          <Route exact path='/settings' component={Settings} />
+          <Route exact path='/news' render={() => <News state={props.state.newsPage} />} />
+          <Route exact path='/music' render={() => <Music state={props.state.musicPage} />} />
+          <Route exact path='/settings' render={() => <Settings state={props.state.settingsPage} />} />
         </div>
       </div>
     </BrowserRouter>

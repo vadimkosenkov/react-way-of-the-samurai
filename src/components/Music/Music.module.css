@@ -1,0 +1,38 @@
+.container {
+  padding: 20px;
+}
+
+.container h2 {
+  margin: 0 0 16px;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.track div {
+  display: grid;
+  gap: 4px;
+}
+
+.track span {
+  color: #666;
+}
+
+.duration {
+  white-space: nowrap;
+}
