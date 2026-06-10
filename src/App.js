@@ -7,7 +7,7 @@ import Dialogs from './components/Dialogs/Dialogs';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect } from 'react-router-dom'; // Добавлен Redirect
 
 const App = (props) => {
   return (
@@ -16,6 +16,7 @@ const App = (props) => {
         <Header />
         <Navbar />
         <div className='app-wrapper_content'>
+          <Route exact path='/' render={() => <Redirect to='/profile' />} />
           <Route path='/profile' render={() => <Profile state={props.state.profilePage} />} />
           <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage} />} />
           {/* Атрибуты Route:

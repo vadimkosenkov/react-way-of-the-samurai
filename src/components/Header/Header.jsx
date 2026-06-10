@@ -1,11 +1,14 @@
 import React from 'react';
 import './../../App.css';
 import s from './Header.module.css';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header className={`${s.header} br`}>
-      <img className={s.logo} src='./images/mountain_logo.png' alt='logo: mountain' />
+      <NavLink to='/profile'>
+        <img className={s.logo} src='./images/mountain_logo.png' alt='logo: mountain' />
+      </NavLink>
       <div className={s.content}>Way of the samuray</div>
       <form action='#' className={`${s.form} br`}>
         <div className={s.searchBar}>
