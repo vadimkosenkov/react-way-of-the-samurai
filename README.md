@@ -27,7 +27,7 @@ Follow these steps to explore the app locally.
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com
+git clone https://github.com/vadimkosenkov/react-way-of-the-samurai.git
 cd react-way-of-the-samurai
 ```
 
